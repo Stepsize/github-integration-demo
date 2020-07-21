@@ -8,7 +8,13 @@ function uglyCode(arg1: any, arg2: any): any {
       // do something else
     }
   } else if (typeof arg1 === 'number') {
-    // do yet another thing
+    if (typeof arg2 === 'string') {
+      // do that
+    } else if (typeof arg2 === 'number') {
+      // do this
+    } else {
+      // do another thing
+    }
   } else {
     // running out of ideas
   }
